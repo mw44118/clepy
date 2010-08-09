@@ -19,7 +19,7 @@ if sys.version_info < (2, 6, 0, '', 0):
 
 setup(
     name="clepy",
-    version="0.3.18",
+    version="0.3.19",
     packages=["clepy"],
     install_requires=dependencies,
     url="http://code.google.com/p/clepy",
