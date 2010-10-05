@@ -8,7 +8,7 @@ except ImportError:
 dependencies = [
         'decorator >= 3.0',
         'nose',
-        'mock==0.4'
+        'mock'
     ]
 
 # If the python version is lower than 2.6, I need to add multiprocessing
@@ -19,7 +19,7 @@ if sys.version_info < (2, 6, 0, '', 0):
 
 setup(
     name="clepy",
-    version="0.3.19",
+    version="0.3.20",
     packages=["clepy"],
     install_requires=dependencies,
     url="http://code.google.com/p/clepy",
