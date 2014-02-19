@@ -230,10 +230,12 @@ def spinning_distraction():
         sys.stderr.flush()
 
 
-def maybe_add_ellipses(s, maxlen=72):
+def maybe_add_ellipses(s, maxlen=72, instead_of_ellipses_add_this_text=None):
     """
     If string s is longer than maxlen, truncate it and add on ... to
     the end.
+
+    If you want something else, use the instead_of_ellipses_add_this_text
 
     >>> maybe_add_ellipses('abcdef')
     'abcdef'
@@ -243,6 +245,10 @@ def maybe_add_ellipses(s, maxlen=72):
 
     if len(s) <= maxlen:
         return s
+
+    elif instead_of_ellipses_add_this_text:
+        return "{0}{1}".format(s[:maxlen],
+                               instead_of_ellipses_add_this_text)
 
     else:
         return "%s..." % s[:maxlen]
