@@ -19,12 +19,13 @@ if sys.version_info < (2, 6, 0, '', 0):
 
 setup(
     name="clepy",
-    version="0.3.21",
+    version="0.3.22",
     packages=["clepy"],
     install_requires=dependencies,
     url="http://code.google.com/p/clepy",
     license="MIT License",
     description="utilities from the Cleveland Python user group",
     maintainer="W. Matthew Wilson",
-    maintainer_email="matt@tplus1.com",
+    maintainer_email="matt@216software.com",
+    use_2to3=True,
 )

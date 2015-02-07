@@ -47,7 +47,7 @@ def attrsearch(o, attr_substr):
     attr_substr in the name of the attribute.
 
     >>> attrsearch(dict(), 'key')
-    ['fromkeys', 'has_key', 'iterkeys', 'keys']
+    ['fromkeys', 'has_key', 'iterkeys', 'keys', 'viewkeys']
 
     >>> attrsearch(object(), 'vermicious knid')
     []
@@ -91,6 +91,7 @@ def chunkify(s, chunksize):
 
     for i in range(0, len(s), chunksize):
         yield s[i:i+chunksize]
+
 
 class attrdict(UserDict):
     """
