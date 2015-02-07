@@ -13,7 +13,11 @@ import tempfile
 import time
 import warnings
 
-from UserDict import UserDict
+try:
+    from UserDict import UserDict
+except ImportError:
+    from collections import UserDict
+
 from copy import copy
 from datetime import datetime, timedelta
 
