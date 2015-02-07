@@ -1,3 +1,4 @@
 *.pyc
 clepy.egg-info
 .*.swp
+/dist
